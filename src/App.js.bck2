@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+import ResponsiveContainer from "react-responsive-widget";
+
+let imageBck = "images/photo-rubrique-1_0.jpg";
+
+var myStyle = {
+	backgroundImage: 'url(' + imageBck + ')',
+	backgroundSize: 'cover', 
+                backgroundPosition: 'center center',
+                backgroundRepeat: 'no-repeat',
+}
+
+
+class App extends Component {
+  render() {
+    return (
+<div style={myStyle}>
+                <div className="app-row">
+                    <div className="app-col-xs-6 app-col-md-4">.app-col-xs-12 .app-col-md-4</div>
+                    <div className="app-col-xs-6 app-col-md-4">.app-col-xs-12 .app-col-md-4</div>
+                    <div className="app-col-xs-6 app-col-md-4">.app-col-xs-12 .app-col-md-4</div>
+                <div className="app-col-xs-6 app-col-md-4">.app-col-xs-12 .app-col-md-4</div>
+                    <div className="app-col-xs-6 app-col-md-4">.app-col-xs-12 .app-col-md-4</div>
+                    <div className="app-col-xs-6 app-col-md-4">.app-col-xs-12 .app-col-md-4</div>
+		</div>
+            </div>
+    );
+  }
+}
+
+export default App;
